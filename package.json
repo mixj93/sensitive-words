@@ -1,6 +1,6 @@
 {
   "name": "mixj93-sensitive-words",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Filter out a list of sensitive words",
   "main": "build/index.js",
   "scripts": {
