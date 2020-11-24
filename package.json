@@ -1,0 +1,40 @@
+{
+  "name": "sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest src",
+    "test:watch": "jest --watch src"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mixj93/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Li Xueli (https://xueli.li)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mixj93/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/mixj93/sensitive-words#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.7",
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
+    "jest": "^26.6.3",
+    "watch": "^1.0.2"
+  }
+}
