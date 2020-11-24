@@ -3,7 +3,7 @@ import { sensitiveWords } from '.'
 test('replaces blacklisted words with asterisk', () => {
   expect(
     sensitiveWords('The name of the NX will be Nintedo Switch.', ['switch'])
-  ).toBe('The name of the NX will be Nintedo ***.')
+  ).toBe('The name of the NX will be Nintedo ****.')
 })
 
 test('replaces multiple instances of blacklisted words', () => {
@@ -12,5 +12,5 @@ test('replaces multiple instances of blacklisted words', () => {
       'The name of the NX will be Nintedo Switch. The switch will be awesome!',
       ['switch']
     )
-  ).toBe('The name of the NX will be Nintedo ***. The *** will be awesome!')
+  ).toBe('The name of the NX will be Nintedo ****. The **** will be awesome!')
 })

@@ -1,5 +1,5 @@
 {
-  "name": "sensitive-words",
+  "name": "mixj93-sensitive-words",
   "version": "1.0.0",
   "description": "Filter out a list of sensitive words",
   "main": "build/index.js",
@@ -7,7 +7,9 @@
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "jest src",
-    "test:watch": "jest --watch src"
+    "test:watch": "jest --watch src",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "babel": {
     "presets": [
@@ -35,6 +37,7 @@
     "@babel/core": "^7.12.7",
     "@babel/preset-env": "^7.12.7",
     "jest": "^26.6.3",
+    "np": "^7.0.0",
     "watch": "^1.0.2"
   }
 }
